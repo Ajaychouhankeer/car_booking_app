@@ -1,0 +1,169 @@
+name: bloc_project_basic
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  bloc: ^9.0.0
+  equatable: ^2.0.0
+  flutter_bloc: ^9.1.0
+  gradient_borders: ^1.0.1
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+  pin_code_fields: ^8.0.1
+  google_nav_bar: ^5.0.7
+  country_code_picker: ^3.3.0
+  carousel_slider: ^5.1.1
+  get: ^4.7.2
+  get_storage: ^2.1.1
+  shared_preferences: ^2.5.3
+  http: ^1.2.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.4.1
+  fluttertoast: ^8.2.4
+  intl: ^0.20.2
+  simple_gradient_text: ^1.3.0
+  image_picker: ^1.1.2
+  fl_chart: ^0.71.0
+  flutter_html: ^3.0.0
+  flutter_svg: ^2.2.1
+  camera: ^0.11.1
+  path_provider: ^2.1.5
+  path: ^1.9.0
+  device_preview: ^1.3.1
+  camera_platform_interface: ^2.7.0+1
+  permission_handler: ^12.0.1
+  device_info_plus: ^12.2.0
+  url_launcher: ^6.3.2
+  package_info_plus: ^9.0.0
+  dio: ^5.4.0
+  open_filex: ^4.4.0
+  share_plus: ^12.0.1
+  file_picker: ^8.0.0
+  hydrated_bloc: ^10.1.1
+  dotted_border: ^2.1.0
+  flutter_image_compress: ^2.4.0
+  connectivity_plus: ^7.0.0
+  showcaseview: ^5.0.1
+  pdf: ^3.11.3
+  excel: ^2.1.0
+  table_calendar: ^3.2.0
+  smooth_page_indicator: ^1.1.0
+#  firebase_core: ^3.6.0
+#  firebase_auth: ^5.3.0
+#  cloud_firestore: ^5.6.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # Assets Support
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/gifs/
+
+  # Fonts Support
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-Regular.ttf
+
+
+
+
+
+
+
+
+
+#name: bloc_project_basic
+#description: "A new Flutter project."
+#
+#publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+#
+#version: 1.0.0+1
+#
+#environment:
+#  sdk: ^3.8.1
+#
+#dependencies:
+#  flutter:
+#    sdk: flutter
+#  bloc: ^9.0.0
+#  equatable: ^2.0.0
+#  flutter_bloc: ^9.1.0
+#
+#
+#  gradient_borders: ^1.0.1
+#
+#  cupertino_icons: ^1.0.8
+#  flutter_screenutil: ^5.9.3
+#  pin_code_fields: ^8.0.1
+#  google_nav_bar: ^5.0.7
+#  country_code_picker: ^3.3.0
+#  carousel_slider: ^5.1.1
+#  get: ^4.7.2
+#  get_storage: ^2.1.1
+#  shared_preferences: ^2.5.3
+#  http: ^1.2.0
+#  shimmer: ^3.0.0
+#  cached_network_image: ^3.4.1
+#  fluttertoast: ^8.2.4
+#  intl: ^0.20.2
+#  simple_gradient_text: ^1.3.0
+#
+#  image_picker: ^1.1.2
+#
+#  fl_chart: ^0.71.0
+#  flutter_html: ^3.0.0
+#  flutter_svg: ^2.2.1
+#
+#  camera: ^0.11.1
+#  path_provider: ^2.1.5
+#  path: ^1.9.0
+#  device_preview: ^1.3.1
+#  camera_platform_interface: ^2.7.0+1
+#
+#  permission_handler: ^12.0.1
+#  device_info_plus: ^12.2.0
+#  url_launcher: ^6.3.2
+#  package_info_plus: ^9.0.0
+#  dio: ^5.4.0
+#  open_filex: ^4.4.0
+#  share_plus: ^12.0.1
+#  file_picker: ^8.0.0
+#  hydrated_bloc: ^10.1.1
+#  dotted_border: ^2.1.0
+#  flutter_image_compress: ^2.4.0
+#  connectivity_plus: ^7.0.0
+#  showcaseview: ^5.0.1
+#  pdf: ^3.11.3
+#  excel: ^2.1.0
+#  table_calendar: ^3.2.0
+#
+#
+#dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+#
+#  flutter_lints: ^5.0.0
+#
+#flutter:
+#
+#  uses-material-design: true
+
