@@ -17,12 +17,12 @@ class LocalData {
       'country_code': 'US',
       'language_image': ImageConstants.imgEnglishLng,
     },
-    {
-      'language_code': "mr",
-      'language_name': 'मराठी',
-      'country_code': 'IN',
-      'language_image': ImageConstants.imgMarathiLng,
-    },
+    // {
+    //   'language_code': "mr",
+    //   'language_name': 'मराठी',
+    //   'country_code': 'IN',
+    //   'language_image': ImageConstants.imgMarathiLng,
+    // },
   ];
 
 

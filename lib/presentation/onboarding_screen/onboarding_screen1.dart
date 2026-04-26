@@ -3,9 +3,6 @@ import 'package:bloc_project_basic/core/constants/string_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:bloc_project_basic/core/navigations/navigation_service.dart';
 import 'package:bloc_project_basic/router/app_router.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import '../../core/constants/icons_constant.dart';
 import '../../core/constants/image_constant.dart';
 import '../../core/widgets/common_widgets.dart';
 import 'onboardingIndegator.dart';
@@ -42,14 +39,6 @@ class OnboardingScreen1 extends StatelessWidget {
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
                 ),
-                // boxShadow: [
-                //   BoxShadow(
-                //     color: AppColors.black87,
-                //     blurRadius: 20,
-                //     spreadRadius: 1,
-                //     offset: Offset(0, -5), // 👈 TOP shadow
-                //   ),
-                // ],
               ),
 
               child: Column(

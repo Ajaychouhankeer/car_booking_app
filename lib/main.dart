@@ -1,3 +1,7 @@
+import 'package:bloc_project_basic/logic/about_bloc/about_bloc.dart';
+import 'package:bloc_project_basic/logic/banners/banner_bloc.dart';
+import 'package:bloc_project_basic/logic/booking/booking_bloc.dart';
+import 'package:bloc_project_basic/logic/vehicles_bloc/vehicle_bloc.dart';
 import 'package:bloc_project_basic/presentation/splash_screen/splash_screen.dart';
 import 'package:bloc_project_basic/router/app_router.dart';
 import 'package:flutter/material.dart';
@@ -10,9 +14,14 @@ import 'core/navigations/navigation_service.dart';
 import 'core/translations/translation_service.dart';
 import 'data/repositories/authentication/auth_repository.dart';
 import 'logic/auth_bloc/auth_bloc.dart';
+import 'logic/banners/banner_event.dart';
 import 'logic/bottom_nav/bottom_nav_bloc.dart';
+import 'logic/distance_bloc/distance_bloc.dart';
 import 'logic/login/login_bloc.dart';
 import 'logic/login/login_event.dart';
+import 'logic/payment_bloc/payment_bloc.dart';
+import 'logic/profile_bloc/profile_bloc.dart';
+import 'logic/profile_bloc/profile_event.dart';
 import 'logic/themes/theme_bloc.dart';
 
 Future<void> main() async {
@@ -59,9 +68,33 @@ class MyApp extends StatelessWidget {
           create: (_) => AuthBloc(),
         ),
 
-        // BlocProvider(
-        //   create: (_) => AuthBloc(authRepository: AuthRepository()),
-        // ),
+        BlocProvider(
+          create: (_) => ProfileBloc()..add(GetProfileEvent()),
+        ),
+
+        BlocProvider(
+          create: (_) => BookingBloc(),
+        ),
+
+        BlocProvider(
+          create: (_) => BannerBloc()..add(FetchBannersEvent()),
+        ),
+
+        BlocProvider(
+        create: (_) => PaymentBloc(),
+        ),
+
+        BlocProvider(
+          create: (_) => AboutBloc()
+        ),
+
+        BlocProvider(
+          create: (_) => DistanceBloc(),
+        ),
+
+        BlocProvider(
+          create: (_) => VehicleBloc(),
+        ),
 
       ],
       child: BlocBuilder<ThemeBloc, ThemeState>(

@@ -5,7 +5,6 @@ enum ProfileOptionAction {
   editProfile,
   changePassword,
   myBookings,
-  bookingHistory,
   favorites,
   notifications,
   helpFaq,

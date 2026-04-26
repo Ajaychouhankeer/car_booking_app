@@ -7,18 +7,21 @@ class ImageConstants {
   ).state.isDark;
 
 
+  static const appIconLogo = 'assets/images/ToursGo_AppIcon.png';
   static const familyTripHomeImage = 'assets/images/familytrip.png';
   static const darshanTripHomeImage = 'assets/images/darshanTrip.png';
   static const transportTripHomeImage = 'assets/images/transport.png';
 
   static const skipTextIcon ='assets/images/skip.png';
-  static const splashLogo ='assets/images/car_booking_logo.png';
+  static const splashLogo ='assets/images/TousGo_Logo.png';
+  // static const splashLogo ='assets/images/car_booking_logo.png';
   static const nextArrow ='assets/images/next_arrow.png';
   static const google ='assets/images/Google.png';
   static const facebook ='assets/images/facebook.png';
   static const apple ='assets/images/apple.png';
   static const saleImg ='assets/images/banner.jpeg';
   static const welcomeImageFirst ='assets/images/welcomeImage.jpeg';
+  static const logoName ='assets/images/logoname.png';
 
   static const imageNoDataFound = 'assets/images/img_no_data_fond.png';
   static const imgLoginBg = 'assets/images/img_login_bg.png';
@@ -27,7 +30,27 @@ class ImageConstants {
   static const imgMarathiLng = 'assets/images/img_marathi_lng.svg';
   static const imgDummyOnboarding = 'assets/images/img_dummy_onboarding.png';
 
+  static const googleMapImage = 'assets/images/map_bg.png';
+  static const googleMapImageDark = 'assets/images/map_bg2.png';
+
+  static String get googleMapBgImage =>
+      isDark ? googleMapImageDark : googleMapImage;
+
+  static const toLocationIcon = 'assets/images/to_location_ic.png';
+  static const fromLocaionIcon = 'assets/images/from_location_ic.png';
+  static const pickupTimeIcon = 'assets/images/PickupTime.png';
+
   static const VehicalSwift = 'assets/images/car.png';
+  static const cancelBooking = 'assets/images/cancelBooking.png';
+
+  //category
+  static const CtDarshan = 'assets/images/ct_darshan.png';
+  static const CtFamily = 'assets/images/family.png';
+  static const CtAirportDrop = 'assets/images/ariport.png';
+  static const CtOneWay = 'assets/images/oneway.jpeg';
+  static const CtBusiness = 'assets/images/ct_business.png';
+  static const QrCodeImage = 'assets/images/Qr_code.png';
+
 
   // static const _imgAuthIllustration = 'assets/images/img_auth_illustration.svg';
   // static const _imgAuthIllustrationDark =

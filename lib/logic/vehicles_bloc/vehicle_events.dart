@@ -5,3 +5,9 @@ class GetVehiclesEvent extends VehicleEvent {
 
   GetVehiclesEvent({required this.userId});
 }
+
+class SearchVehicleEvent extends VehicleEvent {
+  final String query;
+
+  SearchVehicleEvent(this.query);
+}

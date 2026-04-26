@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../router/app_router.dart';
+
 class NavigationService {
   static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -38,5 +40,25 @@ class NavigationService {
   }
   static bool canPop() {
     return navigatorKey.currentState?.canPop() ?? false;
+  }
+
+  static Future<dynamic>? pushNamedAndRemoveUntilWithCondition(
+      String routeName,
+      RoutePredicate predicate, {
+        Object? arguments,
+      }) {
+    return navigatorKey.currentState?.pushNamedAndRemoveUntil(
+      routeName,
+      predicate,
+      arguments: arguments,
+    );
+  }
+
+  static Future<dynamic>? pushToBookingHistoryAndClearStack() {
+    return navigatorKey.currentState?.pushNamedAndRemoveUntil(
+      AppRoutes.bookingHisory,
+          (Route<dynamic> route) =>
+      route.settings.name == AppRoutes.mainScreen,
+    );
   }
 }

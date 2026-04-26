@@ -65,9 +65,9 @@ class AppSnackBar {
       case SnackBarType.success:
         return _SnackbarConfig(
           icon: Icons.check_circle,
-          color: Colors.green.shade700,
+          color: Colors.blue,
           bgColor: const Color(0xffddf5df),
-          textColor: Colors.green.shade800,
+          textColor: Colors.blue.shade800,
         );
 
       case SnackBarType.error:

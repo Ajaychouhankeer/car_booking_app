@@ -62,6 +62,13 @@ class AppTextStyle {
       fontFamily: 'Quicksand',
       fontSize: 30.sp,
       fontWeight: FontWeight.bold);
+
+  static TextStyle titleStyle34bb =   TextStyle(
+      color: AppColors.boldTextColor,
+      fontFamily: 'Quicksand',
+      fontSize: 34.sp,
+      fontWeight: FontWeight.bold);
+
   static TextStyle titleStyle10bw =   TextStyle(
       color: AppColors.whiteTextColor,
       fontFamily: 'Quicksand',
@@ -360,6 +367,13 @@ class AppTextStyle {
     color: AppColors.lightDarkTextDarkColor,
     fontFamily: 'Quicksand',
     fontSize: 30.sp,
+    fontWeight: FontWeight.bold,
+  );
+
+  static TextStyle get titleStyleLB40bb => TextStyle(
+    color: AppColors.lightDarkTextDarkColor,
+    fontFamily: 'Quicksand',
+    fontSize: 40.sp,
     fontWeight: FontWeight.bold,
   );
 

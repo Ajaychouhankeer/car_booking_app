@@ -86,6 +86,101 @@ class TranslationService extends Translations {
       StringConstants.vehicles: StringConstants.vehicles,
       StringConstants.bookings: StringConstants.bookings,
       StringConstants.map: StringConstants.map,
+
+      //new strings
+
+      /// Booking & Vehicle
+      StringConstants.vehicleDetails: StringConstants.vehicleDetails,
+      StringConstants.noVahicleAvailbe: StringConstants.noVahicleAvailbe,
+      StringConstants.features: StringConstants.features,
+      StringConstants.description: StringConstants.description,
+      StringConstants.availableNow: StringConstants.availableNow,
+      StringConstants.notAvailble: StringConstants.notAvailble,
+      StringConstants.bookNow: StringConstants.bookNow,
+      StringConstants.noBookingFound: StringConstants.noBookingFound,
+      StringConstants.viewDetails: StringConstants.viewDetails,
+      StringConstants.viewBooking: StringConstants.viewBooking,
+
+      StringConstants.cancelBooking: StringConstants.cancelBooking,
+      StringConstants.areYouSureCancelBooking: StringConstants.areYouSureCancelBooking,
+      StringConstants.yesCancel: StringConstants.yesCancel,
+      StringConstants.bookingCanceled: StringConstants.bookingCanceled,
+      StringConstants.bookingConfirmed: StringConstants.bookingConfirmed,
+      StringConstants.confirmBooking: StringConstants.confirmBooking,
+      StringConstants.yourBookingSuccefullyCreated: StringConstants.yourBookingSuccefullyCreated,
+      StringConstants.bookingCanceledSuccefully: StringConstants.bookingCanceledSuccefully,
+
+      StringConstants.tripDetails: StringConstants.tripDetails,
+      StringConstants.pickupLocation: StringConstants.pickupLocation,
+      StringConstants.dropLocation: StringConstants.dropLocation,
+      StringConstants.selectPickupDate: StringConstants.selectPickupDate,
+      StringConstants.selectPickupTime: StringConstants.selectPickupTime,
+      StringConstants.selectReturnDate: StringConstants.selectReturnDate,
+      StringConstants.roundTrip: StringConstants.roundTrip,
+      StringConstants.otherDetails: StringConstants.otherDetails,
+      StringConstants.totalDistanceInkm: StringConstants.totalDistanceInkm,
+      StringConstants.totalPassanger: StringConstants.totalPassanger,
+      StringConstants.pickupTime: StringConstants.pickupTime,
+      StringConstants.bookYourTrip: StringConstants.bookYourTrip,
+
+      /// Contact
+      StringConstants.contactHeaddingDescription: StringConstants.contactHeaddingDescription,
+      StringConstants.contactYourMassage: StringConstants.contactYourMassage,
+      StringConstants.sendMassge: StringConstants.sendMassge,
+      StringConstants.responsein24h: StringConstants.responsein24h,
+      StringConstants.close: StringConstants.close,
+      StringConstants.responseSubmitteddSuccefully: StringConstants.responseSubmitteddSuccefully,
+      StringConstants.thankyouforContact: StringConstants.thankyouforContact,
+      /// Distance & Booking Extra
+      StringConstants.enterTripLocation: StringConstants.enterTripLocation,
+      StringConstants.findExactDistacne: StringConstants.findExactDistacne,
+      StringConstants.from: StringConstants.from,
+      StringConstants.to: StringConstants.to,
+      StringConstants.calculateDistance: StringConstants.calculateDistance,
+      StringConstants.calculatingDistance: StringConstants.calculatingDistance,
+      StringConstants.BookyourNextTripWithUs: StringConstants.BookyourNextTripWithUs,
+      StringConstants.popularDarshanTrip: StringConstants.popularDarshanTrip,
+      StringConstants.bookingDetails: StringConstants.bookingDetails,
+      StringConstants.bookingID: StringConstants.bookingID,
+      StringConstants.pickupDate: StringConstants.pickupDate,
+      StringConstants.returnDate: StringConstants.returnDate,
+      StringConstants.totalAmout: StringConstants.totalAmout,
+      StringConstants.DownloadBookingSlip: StringConstants.DownloadBookingSlip,
+      StringConstants.searchVhicles: StringConstants.searchVhicles,
+      StringConstants.tripDistance: StringConstants.tripDistance,
+
+
+      ///
+      StringConstants.vehicle: StringConstants.vehicle,
+      StringConstants.seatsKm: StringConstants.seatsKm,
+      StringConstants.totalDistanceInkm: StringConstants.totalDistanceInkm,
+      StringConstants.totalAmount: StringConstants.totalAmount,
+      StringConstants.makePayment: StringConstants.makePayment,
+      StringConstants.payAgain: StringConstants.payAgain,
+
+      StringConstants.paymentSubmitted: StringConstants.paymentSubmitted,
+      StringConstants.paymentVerified: StringConstants.paymentVerified,
+      StringConstants.paymentRejected: StringConstants.paymentRejected,
+      StringConstants.paymentPending: StringConstants.paymentPending,
+
+      StringConstants.payment: StringConstants.payment,
+      StringConstants.upiPayment: StringConstants.upiPayment,
+      StringConstants.tapToPay: StringConstants.tapToPay,
+      StringConstants.uploadPaymentProof: StringConstants.uploadPaymentProof,
+      StringConstants.imageSelected: StringConstants.imageSelected,
+      StringConstants.selectPaymentScreenshot: StringConstants.selectPaymentScreenshot,
+      StringConstants.paymentProofSubmittedMessage: StringConstants.paymentProofSubmittedMessage,
+      StringConstants.okGotIt: StringConstants.okGotIt,
+      StringConstants.upiPaymentHint: StringConstants.upiPaymentHint,
+      StringConstants.upiCopied: StringConstants.upiCopied,
+
+      StringConstants.accountHolder: StringConstants.accountHolder,
+      StringConstants.accountNo: StringConstants.accountNo,
+      StringConstants.ifsc: StringConstants.ifsc,
+
+      StringConstants.qrCode: StringConstants.qrCode,
+      StringConstants.netBanking: StringConstants.netBanking,
+      StringConstants.cash: StringConstants.cash,
     },
     'hi_IN': {
       StringConstants.login: 'लॉगिन',
@@ -164,6 +259,105 @@ class TranslationService extends Translations {
       StringConstants.themes: 'थीम्स',
       StringConstants.language: 'भाषा',
 
+      //new strings
+      /// Booking & Vehicle
+      StringConstants.vehicleDetails: 'वाहन विवरण',
+      StringConstants.noVahicleAvailbe: 'कोई वाहन उपलब्ध नहीं है',
+      StringConstants.features: 'विशेषताएं',
+      StringConstants.description: 'विवरण',
+      StringConstants.availableNow: 'अभी उपलब्ध',
+      StringConstants.notAvailble: 'उपलब्ध नहीं है',
+      StringConstants.bookNow: 'अभी बुक करें',
+      StringConstants.noBookingFound: 'कोई बुकिंग नहीं मिली',
+      StringConstants.viewDetails: 'विवरण देखें',
+      StringConstants.viewBooking: 'बुकिंग देखें',
+
+      StringConstants.cancelBooking: 'बुकिंग रद्द करें?',
+      StringConstants.areYouSureCancelBooking: 'क्या आप वाकई इस बुकिंग को रद्द करना चाहते हैं?\nयह कार्रवाई वापस नहीं की जा सकती।',
+      StringConstants.yesCancel: 'हाँ, रद्द करें',
+      StringConstants.bookingCanceled: 'बुकिंग रद्द कर दी गई',
+      StringConstants.bookingConfirmed: 'बुकिंग कन्फर्म हो गई!',
+      StringConstants.confirmBooking: 'बुकिंग कन्फर्म करें!',
+      StringConstants.yourBookingSuccefullyCreated: 'आपकी बुकिंग सफलतापूर्वक बन गई है।\n\nहमारी टीम जल्द ही आपसे संपर्क करेगी।\n\nहमारी सेवा चुनने के लिए धन्यवाद!',
+      StringConstants.bookingCanceledSuccefully: 'आपकी बुकिंग सफलतापूर्वक रद्द कर दी गई है।\n\nयदि आपको किसी सहायता की आवश्यकता हो, तो हमारी टीम हमेशा उपलब्ध है।',
+
+      StringConstants.tripDetails: 'यात्रा विवरण',
+      StringConstants.pickupLocation: 'पिकअप स्थान',
+      StringConstants.dropLocation: 'ड्रॉप स्थान',
+      StringConstants.selectPickupDate: 'पिकअप तारीख चुनें',
+      StringConstants.selectPickupTime: 'पिकअप समय चुनें',
+      StringConstants.selectReturnDate: 'रिटर्न तारीख चुनें',
+      StringConstants.roundTrip: 'राउंड ट्रिप',
+      StringConstants.otherDetails: 'अन्य विवरण',
+      StringConstants.totalDistanceInkm: 'कुल दूरी (किमी में)',
+      StringConstants.totalPassanger: 'कुल यात्री (वैकल्पिक)',
+      StringConstants.pickupTime: 'पिकअप समय',
+      StringConstants.bookYourTrip: 'अपनी यात्रा बुक करें',
+      StringConstants.searchVhicles: 'वाहन खोजें...',
+
+      /// Contact
+      StringConstants.contactHeaddingDescription: 'कोई सवाल, मदद या सहायता चाहिए? हमसे संपर्क करें। हम आपकी मदद के लिए हमेशा तैयार हैं।',
+      StringConstants.contactYourMassage: 'आपका संदेश',
+      StringConstants.sendMassge: 'संदेश भेजें',
+      StringConstants.responsein24h: 'हम आमतौर पर 24 घंटे के भीतर जवाब देते हैं।',
+      StringConstants.close: 'बंद करें',
+      StringConstants.responseSubmitteddSuccefully: 'आपका संदेश सफलतापूर्वक भेज दिया गया है।\nहमारी टीम जल्द ही आपसे संपर्क करेगी।',
+      StringConstants.thankyouforContact: 'धन्यवाद!',
+
+      /// Distance & Booking Extra
+      StringConstants.enterTripLocation: 'अपनी यात्रा का स्थान दर्ज करें',
+      StringConstants.findExactDistacne: 'अपनी यात्रा के लिए सटीक दूरी (किमी में) जानने के लिए',
+      StringConstants.from: 'से',
+      StringConstants.to: 'तक',
+      StringConstants.calculateDistance: 'दूरी निकालें',
+      StringConstants.calculatingDistance: 'दूरी की गणना की जा रही है...',
+      StringConstants.BookyourNextTripWithUs: 'हमारे साथ अपनी अगली यात्रा बुक करें',
+      StringConstants.popularDarshanTrip: 'लोकप्रिय दर्शन यात्रा',
+      StringConstants.bookingDetails: 'बुकिंग विवरण',
+      StringConstants.bookingID: 'बुकिंग आईडी',
+      StringConstants.pickupDate: 'पिकअप तिथि',
+      StringConstants.returnDate: 'रिटर्न तिथि',
+      StringConstants.totalAmout: 'कुल राशि',
+      StringConstants.DownloadBookingSlip: 'स्लिप डाउनलोड करें',
+      StringConstants.tripDistance: 'यात्रा दूरी',
+
+      //----------------
+      StringConstants.vehicle: 'वाहन',
+      StringConstants.seatsKm: 'सीट्स • किमी',
+      StringConstants.totalDistanceInkm: 'कुल दूरी (किमी)',
+      StringConstants.totalAmount: 'कुल राशि',
+      StringConstants.makePayment: 'भुगतान करें',
+      StringConstants.payAgain: 'फिर से भुगतान करें',
+
+      StringConstants.paymentSubmitted: 'भुगतान सबमिट हो गया - सत्यापन की प्रतीक्षा',
+      StringConstants.paymentVerified: 'भुगतान सत्यापित ✔',
+      StringConstants.paymentRejected: 'भुगतान अस्वीकार, फिर से भुगतान करें',
+      StringConstants.paymentPending: 'भुगतान लंबित',
+
+// Payment Screen
+      StringConstants.payment: 'भुगतान',
+      StringConstants.upiPayment: 'UPI भुगतान',
+      StringConstants.tapToPay: 'भुगतान करने के लिए टैप करें',
+      StringConstants.uploadPaymentProof: 'भुगतान का प्रमाण अपलोड करें',
+      StringConstants.imageSelected: 'छवि चयनित ✔',
+      StringConstants.selectPaymentScreenshot: 'कृपया भुगतान का स्क्रीनशॉट अपलोड करें',
+      StringConstants.paymentProofSubmittedMessage:
+      'आपका भुगतान प्रमाण सफलतापूर्वक सबमिट कर दिया गया है।\n\n'
+          'हमारी टीम आपके भुगतान की जांच कर रही है और जल्द ही आपकी बुकिंग कन्फर्म करेगी।\n\n'
+          'आपको पुष्टि मिल जाएगी जब आपकी बुकिंग PAID हो जाएगी',
+      StringConstants.okGotIt: 'ठीक है समझ गया',
+      StringConstants.upiPaymentHint:
+      'PhonePe, Paytm, Google Pay या किसी भी UPI ऐप से भुगतान करने के लिए UPI ID पर टैप करें',
+      StringConstants.upiCopied: 'UPI ID कॉपी हो गया',
+
+// Bank
+      StringConstants.accountHolder: 'खाताधारक का नाम',
+      StringConstants.accountNo: 'खाता नंबर',
+      StringConstants.ifsc: 'IFSC कोड',
+
+      StringConstants.qrCode: 'क्यूआर कोड',
+      StringConstants.netBanking: 'नेट बैंकिंग',
+      StringConstants.cash: 'नकद',
     },
     'mr_IN': {
       StringConstants.login: 'लॉगिन',

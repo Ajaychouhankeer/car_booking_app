@@ -1,10 +1,12 @@
+import 'package:bloc_project_basic/core/constants/string_constants.dart';
+import 'package:bloc_project_basic/core/themes/app_text_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../core/colors/colors.dart';
-import '../../core/constants/image_constant.dart';
 import '../../core/widgets/common_widgets.dart';
 import 'onboardingIndegator.dart';
+
 
 class OnboardingPage extends StatelessWidget {
   final String topTitle;
@@ -29,37 +31,42 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-    //  color: bgColor,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.center,
-            colors: [
-              Color(0xFF1565C0),
-              Color(0xFF90CAF9),
-            ],
-          ),
+      key: ValueKey(title), // important for animation
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.center,
+          colors: [
+            Color(0xFF1565C0),
+            Color(0xFF90CAF9),
+          ],
         ),
+      ),
       child: Column(
         children: [
+          //SizedBox(height: 20.h),
+          Spacer(),
 
-          const Spacer(),
           Text(
             topTitle,
-            style: const TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-              color: Colors.white, // gradient pe acha lagega
-            ),
+            style:
+            AppTextStyle.titleStyle18bb.copyWith(color: AppColors.white),
           ),
 
+          CommonWidgets.verticalSpace(height: 10.h),
 
-          const SizedBox(height: 10),
-
+          /// 🔥 IMAGE ANIMATION
           Expanded(
             flex: 5,
             child: Center(
-              child: Image.asset(image, width: 400),
+              child: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 500),
+                child: Image.asset(
+                  image,
+                  key: ValueKey(image),
+                  width: 350.w,
+                ),
+              ),
             ),
           ),
 
@@ -67,7 +74,8 @@ class OnboardingPage extends StatelessWidget {
             flex: 5,
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 30),
+              padding:
+              const EdgeInsets.symmetric(horizontal: 30),
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -75,40 +83,39 @@ class OnboardingPage extends StatelessWidget {
                   topRight: Radius.circular(40),
                 ),
               ),
-
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-
-                  Text(
-                    title,
-                    textAlign: TextAlign.start,
-                    style: const TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                  /// 🔥 TEXT ANIMATION
+                  AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 500),
+                    child: Column(
+                      key: ValueKey(title),
+                      children: [
+                        Text(
+                          title,
+                          textAlign: TextAlign.start,
+                          style: AppTextStyle.titleStyle34bb
+                              .copyWith(color: AppColors.MainBlueColor),
+                        ),
+                        SizedBox(height: 16.h),
+                        Text(
+                          subtitle,
+                          textAlign: TextAlign.start,
+                          style: AppTextStyle.titleStyle16bb
+                              .copyWith(color: AppColors.greysMate),
+                        ),
+                      ],
                     ),
                   ),
 
-                  const SizedBox(height: 16),
-
-                  Text(
-                    subtitle,
-                    textAlign: TextAlign.start,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey,
-                    ),
-                  ),
-
-                  const SizedBox(height: 20),
-
-                  CommonWidgets.verticalSpace(height: 150),
+                  SizedBox(height: 20.h),
+                  const Spacer(),
 
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment:
+                    MainAxisAlignment.spaceBetween,
                     children: [
-
                       OnboardingIndicator(
                         currentIndex: currentIndex,
                         total: 3,
@@ -117,24 +124,32 @@ class OnboardingPage extends StatelessWidget {
                       ElevatedButton(
                         onPressed: onNext,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColors.MainBlueColor,
-                          padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 14),
+                          backgroundColor:
+                          AppColors.MainBlueColor,
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 50.w,
+                              vertical: 14.h),
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius:
+                            BorderRadius.circular(30),
                           ),
                           elevation: 3,
                         ),
                         child: Text(
-                          currentIndex == 2 ? "Get Started" : "Next",
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white,
-                          ),
+                          currentIndex == 2
+                              ? StringConstants
+                              .OnBoardingBtnGetStarted
+                              : StringConstants
+                              .OnBoardingBtnNext,
+                          style: AppTextStyle.titleStyle16bb
+                              .copyWith(
+                              color: AppColors.white),
                         ),
                       ),
                     ],
                   ),
+
+                  SizedBox(height: 20.h),
                 ],
               ),
             ),

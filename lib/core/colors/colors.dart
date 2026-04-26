@@ -21,6 +21,13 @@ class AppColors {
   static Color get appBarTitleColor =>
       isDark ? AppColors.white : AppColors.black;
 
+
+  static Color get VehicleCardBottomContainerColor1  =>
+      isDark ?  Color(0xFF3E2723) :   Color(0xFFFFF3E0);
+
+  static Color get VehicleCardBottomContainerColor2  =>
+      isDark ?Color(0xFF0D47A1) : Color(0xFFE3F2FD);
+
   static Color get lightDarkBlackColor =>
       isDark ? const Color(0xFF0E0B17): Colors.white;
 
@@ -39,6 +46,12 @@ class AppColors {
       isDark ? Colors.black: grey;
 
   static Color get lightDarkCardGroundColor =>
+      isDark ? const Color(0xFF1A1820) : Colors.white;
+
+  static Color get bottomBarIconColor =>
+      isDark ? AppColors.white : AppColors.greysMate;
+
+  static Color get bottomBarColor =>
       isDark ? const Color(0xFF1A1820) : Colors.white;
 
 // Personal Data Or Nominee Details Screen
@@ -140,6 +153,7 @@ class AppColors {
   static const Color lightgrey = Color(0xFFE7E7E8);
 
   static const Color MainBlueColor = Color(0xFF011F5B);
+  static const Color orrangeMain = Color(0xFFE65100);
 
   static const Color primary = Color(0xFF8A6AE5);
   static const Color primaryLight = Color(0xFFAD97ED);

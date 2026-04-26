@@ -5,3 +5,10 @@ class ChangeTabEvent extends BottomNavEvent {
 
   ChangeTabEvent(this.index);
 }
+
+class BackTabEvent extends BottomNavEvent {}
+
+class ResetTabEvent extends BottomNavEvent {
+  final int index;
+  ResetTabEvent(this.index);
+}

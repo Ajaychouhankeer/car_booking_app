@@ -112,6 +112,7 @@ class _SelectLanguageScreenState extends State<SelectLanguageScreen> {
               context: context,
               height: 48.h,
               width: AppLength.screenFullWidth(),
+              buttonColor: AppColors.MainBlueColor,
               child: Text(
                 StringConstants.select,
                 style: AppTextStyle.titleStyle16bw,
@@ -145,7 +146,15 @@ class _LanguageCard extends StatelessWidget {
       margin: EdgeInsets.only(top: 16.h),
       padding: EdgeInsets.only(top: 16.h, left: 16.w, right: 25.w),
       decoration: BoxDecoration(
-        color: AppColors.lightDarkCardGroundColor,
+        //color: AppColors.lightDarkCardGroundColor,
+        gradient: LinearGradient(
+          colors: [
+            AppColors.VehicleCardBottomContainerColor1, // light orange
+            AppColors.VehicleCardBottomContainerColor2, // light blue
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
         borderRadius: BorderRadius.circular(8.r),
         border: Border.all(
           color: isSelected

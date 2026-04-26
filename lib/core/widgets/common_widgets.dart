@@ -27,9 +27,11 @@ import '../navigations/navigation_service.dart';
 import '../themes/app_text_style.dart';
 import 'common_app_snackbar.dart';
 
+
 class CommonWidgets {
   static appBar({
     String? title,
+    Widget? titleWidget,
     bool wantBackButton = true,
     bool centerTitle = true,
     bool manualBackButtonTap = false,
@@ -50,13 +52,15 @@ class CommonWidgets {
           ? GestureDetector(
               onTap: manualBackButtonTap
                   ? onTap
-                  : () {
+                  : ()
+                  {
                       if (NavigationService.canPop()) {
                         NavigationService.pop();
                       } else {
-                        SystemNavigator.pop();
+                       // SystemNavigator.pop();
                       }
                     },
+
               child: Padding(
                 padding: EdgeInsets.all(8),
                 child: Center(
@@ -73,12 +77,19 @@ class CommonWidgets {
       titleSpacing: wantBackButton ? 0 : 20.w,
       centerTitle: centerTitle ?? true,
       // title: Text(title ?? '', style: AppTextStyle.titleStyleLB16bb),
-      title: Text(
-        title ?? '',
-        style: AppTextStyle.titleStyleLB18bb.copyWith(
-          color: titleColor ?? AppColors.appBarTitleColor,
-        ),
-      ),
+      // title: Text(
+      //   title ?? '',
+      //   style: AppTextStyle.titleStyleLB18bb.copyWith(
+      //     color: titleColor ?? AppColors.appBarTitleColor,
+      //   ),
+      // ),
+      title: titleWidget ??
+          Text(
+            title ?? '',
+            style: AppTextStyle.titleStyleLB18bb.copyWith(
+              color: titleColor ?? AppColors.appBarTitleColor,
+            ),
+          ),
       actions: actions,
     );
   }

@@ -18,45 +18,81 @@ class CommonSearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50.h,
-      decoration: BoxDecoration(
-        color: AppColors.lightDarkCardColor,
-        borderRadius: BorderRadius.circular(30.r),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.08),
-            blurRadius: 10,
-            spreadRadius: 1,
-            offset: const Offset(0, 4),
-          ),
-        ],
-        border: Border.all(color: AppColors.lightDarkBorderColor,width: 1)
-      ),
-      child: TextField(
-        controller: controller,
-        onChanged: onChanged,
-        onTap: onTap,
-        decoration: InputDecoration(
-          hintText: hintText,
-          hintStyle: TextStyle(
-            color: Colors.grey,
-            fontSize: 14.sp,
+    final screenWidth = MediaQuery.of(context).size.width;
+
+    // ✅ Responsive width (mobile, tablet, desktop)
+    double maxWidth;
+    if (screenWidth < 600) {
+      maxWidth = screenWidth; // mobile
+    } else if (screenWidth < 1024) {
+      maxWidth = 500; // tablet
+    } else {
+      maxWidth = 600; // desktop
+    }
+
+    return Center(
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: maxWidth),
+        child: Container(
+          height: 50.h.clamp(45, 60), // ✅ responsive height limit
+          padding: EdgeInsets.symmetric(horizontal: 10.w),
+
+          decoration: BoxDecoration(
+            color: AppColors.lightDarkCardColor,
+            borderRadius: BorderRadius.circular(30.r),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.08),
+                blurRadius: 10,
+                spreadRadius: 1,
+                offset: const Offset(0, 4),
+              ),
+            ],
+            border: Border.all(
+              color: AppColors.lightDarkBorderColor,
+              width: 1,
+            ),
           ),
 
-          /// Left Icon
-          prefixIcon: Icon(
-            Icons.search,
-            color: Colors.grey,
-            size: 22.sp,
+          child: Row(
+            children: [
+
+              /// 🔍 Icon
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 8.w),
+                child: Icon(
+                  Icons.search,
+                  color: Colors.grey,
+                  size: 20.sp.clamp(18, 24),
+                ),
+              ),
+
+              /// ✍️ TextField
+              Expanded(
+                child: TextField(
+                  controller: controller,
+                  onChanged: onChanged,
+                  onTap: onTap,
+                  style: TextStyle(fontSize: 14.sp),
+
+                  decoration: InputDecoration(
+                    hintText: hintText,
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 14.sp,
+                    ),
+
+                    border: InputBorder.none,
+                    isDense: true, // ✅ compact
+
+                    contentPadding: EdgeInsets.symmetric(
+                      vertical: 12.h,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
-
-          /// Remove Border
-          border: InputBorder.none,
-          enabledBorder: InputBorder.none,
-          focusedBorder: InputBorder.none,
-
-          contentPadding: EdgeInsets.symmetric(vertical: 14.h),
         ),
       ),
     );

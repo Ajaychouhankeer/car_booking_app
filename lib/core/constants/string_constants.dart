@@ -12,8 +12,12 @@ class StringConstants {
   static const String onlineShopping = "Book hassile-free travel to temples and sacred sites for your spiritual pillgrimage.";
 
   static const String transportTripTextTop =  'TRANSPORT TRIP';
-  static const String onlineHomeDelivery3 = 'Reliable transport for every journey';
+  static const String onlineHomeDelivery3 = 'Reliable Transport For Every Journey';
   static const String homeDeliveryService = "Travel with confidence using fast, secure, and reliable transport services.";
+
+
+  static const String OnBoardingBtnNext = "Next";
+  static const String OnBoardingBtnGetStarted = "Get started";
 
 
   ///--------------------------------
@@ -26,40 +30,18 @@ class StringConstants {
   static String _forgotPassword = 'Forgot Password';
   static String _resetPassword = 'Reset Password';
   static String _createAccount = 'Create Account';
-  // static String _alreadyHaveAccount = 'Already have an Account';
-  // static String _dontHaveAnAccount = 'Dont have an account?';
   static String _welcomeBack = 'Welcome Back';
-
-  static const String _categories = 'Categories';
-  static const String _availablevehicles = 'Available Vehicles';
-
-
-  // Common
-  static String _yes = 'Yes';
-  static String _no = 'No';
-  static String _cancel = 'Cancel';
-  static String _ok = 'OK';
-  static String _submit = 'Submit';
-  static String _continueText = 'Continue';
-  static String _save = 'Save';
-  static String _update = 'Update';
-  static String _delete = 'Delete';
-
-  // Account Messages
   static String _wouldYouLikeToLogout = 'Would you like to logout?';
   static String _doNotHaveAnAccount = 'Don\'t have an account?';
   static String _iHaveAlreadyAccount = 'I have already an account';
   static String _rememberMe = 'Remember Me';
   static String _agreeTerms = 'I agree to the Terms & Conditions';
-
-  // Input Fields
   static String _email = 'Email';
   static String _password = 'Password';
   static String _confirmPassword = 'Confirm Password';
   static String _fullName = 'Full Name';
   static String _userName = 'Username';
   static String _mobileNumber = 'Mobile Number';
-
   // Placeholders
   static String _enterEmail = 'Enter your email';
   static String _enterPassword = 'Enter your password';
@@ -81,8 +63,24 @@ class StringConstants {
   static const String _phoneMustBeAtLeast10Characters = 'Phone number must be 10 digits';
   static const String _confirmPasswordIsRequired = 'Confirm password is required';
 
+  static String _loginSuccess = 'Login successful';
+  static String _registrationSuccess = 'Registration successful';
+  static String _passwordResetSuccess = 'Password reset successfully';
+  static String _somethingWentWrong = 'Something went wrong';
 
+  static const String _categories = 'Categories';
+  static const String _availablevehicles = 'Available Vehicles';
 
+  // Common
+  static String _yes = 'Yes';
+  static String _no = 'No';
+  static String _cancel = 'Cancel';
+  static String _ok = 'OK';
+  static String _submit = 'Submit';
+  static String _continueText = 'Continue';
+  static String _save = 'Save';
+  static String _update = 'Update';
+  static String _delete = 'Delete';
 
   // Home Screen
   static String _home = 'Home';
@@ -94,83 +92,141 @@ class StringConstants {
 
 
   // Profile Screen
+  // 🔷 PROFILE SECTIONS
+  static const String _account = 'Account';
+  static const String _helpSupport = 'Help & Support';
+  static const String _appSettings = 'App Settings';
+  static const String _myBookings = 'My Bookings';
+  static const String _bookingHistory = 'Booking History';
+  static const String _bookYourTrip = 'Book Your Trip';
+  static const String _favorites = 'Favorites';
+  static const String _helpFaq = 'Help & FAQ';
+  static const String _aboutUs = 'About Us';
+  static const String _themes = 'Themes';
+  static const String _language = 'Language';
   static String _profile = 'Profile';
   static String _editProfile = 'Edit Profile';
   static String _changePassword = 'Change Password';
-
-  // AppBar
+  static String _contactUs = 'Contact Us';
+  static String _contactHeaddingDescription = 'Any inquiry, help or support? Feel free to reach out to us. We are here to help you anytime.';
+  static String _contactYourMassage = 'Your Message';
+  static String _sendMassge = 'Send Message';
+  static String _responsein24h = 'We usually respond within 24 hours.';
+  static String _close = 'close';
+  static String _responseSubmitteddSuccefully = 'Your response has been submitted successfully.\nOur team will contact you shortly.';
+  static String _thankyouforContact = 'Thank You!';
   static String _appName = 'My App';
   static String _settings = 'Settings';
   static String _notifications = 'Notifications';
 
   // Success / Error
-  static String _loginSuccess = 'Login successful';
-  static String _registrationSuccess = 'Registration successful';
-  static String _passwordResetSuccess = 'Password reset successfully';
-  static String _somethingWentWrong = 'Something went wrong';
 
   static String _connectionLost = 'Connection Lost';
   static String _wereHavingTroubleConnectingRightNow = 'were Having Trouble Connecting Right Now';
   static String _light = 'Light';
-
-  static String _selectAppTheme = 'selectAppTheme';
+  static String _selectAppTheme = 'Select App Theme';
   static String _themeUpdatedSuccessfully = 'Theme updated successfully';
-  static const String _selectAppThemeDesc =
-      'Customize how the app looks across this device.';
+  static const String _selectAppThemeDesc = 'Customize how the app looks across this device.';
   static const String _error = "Error";
   static const String _select = "select";
-
-  static const String _selectLangAppbarSubtitle =
-      "Select your preferred language to experience simple and seamless investing, tailored just for you.";
-  static const String _pleaseSelectLangToContinue =
-      "Please select a language to continue";
-  static const String _pleaseSelectLangAppbarSubtitle =
-      "Create or update a secure MPIN to protect your account and make logging in faster and safer. ";
+  static const String _selectLangAppbarSubtitle = "Select your preferred language to experience simple and seamless investing, tailored just for you.";
+  static const String _pleaseSelectLangToContinue = "Please select a language to continue";
+  static const String _pleaseSelectLangAppbarSubtitle = "Create or update a secure MPIN to protect your account and make logging in faster and safer. ";
   static String _selectLanguage = 'Select Language';
+  
 
-  // 🔷 PROFILE SECTIONS
-  static const String _account = 'Account';
- // static const String _bookings = 'Bookings';
-  static const String _helpSupport = 'Help & Support';
-  static const String _appSettings = 'App Settings';
+  ///Booking
+  static const String _vehicleDetails = 'Vehicle Details';
+  static const String _noVahicleAvailbe = 'No vehicles available';
+  static const String _features = 'Features';
+  static const String _description = 'Description';
+  static const String _availableNow = 'Available Now';
+  static const String _notAvailble = 'Not Available';
+  static const String _bookNow = 'Book Now';
+  static const String _noBookingFound = 'No Booking Found ';
+  static const String _viewDetails = 'View Details';
+  static const String _viewBooking = 'View Booking';
+  static const String _cancelBooking = 'Cancel Booking?';
+  static const String _areYouSureCancelBooking = 'Are you sure you want to cancel this booking?\nThis action cannot be undone.';
+  static const String _yesCancel = 'Yes, Cancel';
+  static const String _bookingCanceled = 'Booking Cancelled';
+  static const String _bookingConfirmed = 'Booking Confirmed!';
+  static const String _confirmBooking = 'Confirm Booking!';
+  static const String _yourBookingSuccefullyCreated = 'Your booking has been successfully created.\n\nOur team will contact you shortly to confirm the details and assist you further.\n\nThank you for choosing our service!';
+  static const String _bookingCanceledSuccefully = 'Your booking has been cancelled successfully.\n\nIf you need any help, our support team is always available.';
+  static const String _tripDetails = 'Trip Details';
+  static const String _pickupLocation = 'Pickup Location';
+  static const String _dropLocation = 'Drop Location';
+  static const String _selectPickupDate = 'Select Pickup Date';
+  static const String _selectPickupTime = 'Select Pickup time';
+  static const String _selectReturnDate = 'Select Return Date';
+  static const String _roundTrip = 'Round Trip';
+  static const String _otherDetails = 'Other Details';
+  static const String _totalDistanceInkm = 'Total Distance in Km';
+  static const String _totalPassanger = 'Total Passengers (optional)';
+  static const String _pickupTime = 'Pickup Time';
 
-// 🔷 PROFILE OPTIONS
-  static const String _myBookings = 'My Bookings';
-  static const String _bookingHistory = 'Booking History';
-  static const String _favorites = 'Favorites';
-  static const String _helpFaq = 'Help & FAQ';
-  static const String _contactUs = 'Contact Us';
-  static const String _aboutUs = 'About Us';
-  static const String _themes = 'Themes';
-  static const String _language = 'Language';
+  static const String _enterTripLocation = 'Enter You Trip Location';
+  static const String _findExactDistacne = 'For Find Exact Distance in km for your Trip,';
+  static const String _from = 'From,';
+  static const String _to = 'To,';
+  static const String _calculateDistance = 'Calculate Distance,';
+  static const String _calculatingDistance = 'Calculating distance...,';
+  static const String _BookyourNextTripWithUs = 'Book your Next trip with Us';
+  static const String _popularDarshanTrip = 'Popular Darshan Trip';
+  static const String _bookingDetails = 'Booking Details';
+  static const String _bookingID = 'Booking ID';
+  static const String _pickupDate = 'Pickup  Date';
+  static const String _returnDate = 'Return Date';
+  static const String _totalAmout = 'Total Amount';
+  static const String _DownloadBookingSlip = 'Download Slip';
+  static const String _searchVhicles = 'Search vehicles...';
+  static const String _tripDistance = 'Trip Distance';
 
 
-  // // 🔹 Email
-  // static const String emailIsRequired = 'Email is required';
-  // static const String enterValidEmail = 'Please enter a valid email';
-  //
-  // // 🔹 Name
-  // static const String nameIsRequired = 'Name is required';
-  // static const String nameMustContainOnlyLetters = 'Name must contain only letters';
-  // static const String nameMustBeAtLeast2Characters = 'Name must be at least 2 characters';
-  //
-  // // 🔹 Common Field
-  // static const String fieldIsRequired = 'This field is required';
-  //
-  // // 🔹 Password
-  // static const String passwordIsRequired = 'Password is required';
-  // static const String passwordMustBeAtLeast8Characters = 'Password must be at least 8 characters';
-  //
-  // // 🔹 Phone
-  // static const String phoneIsRequired = 'Phone number is required';
-  // static const String phoneNumberMustContainDigitsOnly = 'Phone must contain digits only';
-  // static const String phoneMustBeAtLeast10Characters = 'Phone number must be 10 digits';
-  //
-  // // 🔹 Confirm Password
-  // static const String confirmPasswordIsRequired = 'Confirm password is required';
-  // static const String passwordsDoNotMatch = 'Passwords do not match';
+  //Distance
+  static String get enterTripLocation => _enterTripLocation.tr;
+  static String get findExactDistacne => _findExactDistacne.tr;
+  static String get from => _from.tr;
+  static String get to => _to.tr;
+  static String get calculateDistance => _calculateDistance.tr;
+  static String get calculatingDistance => _calculatingDistance.tr;
+  static String get BookyourNextTripWithUs => _BookyourNextTripWithUs.tr;
+  static String get popularDarshanTrip => _popularDarshanTrip.tr;
+  static String get bookingDetails => _bookingDetails.tr;
+  static String get bookingID => _bookingID.tr;
+  static String get pickupDate=> _pickupDate.tr;
+  static String get returnDate=> _returnDate.tr;
+  static String get totalAmout=> _totalAmout.tr;
+  static String get DownloadBookingSlip=> _DownloadBookingSlip.tr;
+  static String get searchVhicles=> _searchVhicles.tr;
+  static String get tripDistance=> _tripDistance.tr;
 
 
+  static String get cancelBooking => _cancelBooking.tr;
+  static String get noVahicleAvailbe => _noVahicleAvailbe.tr;
+  static String get viewDetails => _viewDetails.tr;
+  static String get viewBooking => _viewBooking.tr;
+  static String get areYouSureCancelBooking => _areYouSureCancelBooking.tr;
+  static String get yesCancel => _yesCancel.tr;
+  static String get bookingCanceled => _bookingCanceled.tr;
+  static String get bookingConfirmed => _bookingConfirmed.tr;
+  static String get confirmBooking => _confirmBooking.tr;
+  static String get yourBookingSuccefullyCreated => _yourBookingSuccefullyCreated.tr;
+  static String get bookingCanceledSuccefully => _bookingCanceledSuccefully.tr;
+  static String get noBookingFound => _noBookingFound.tr;
+  static String get tripDetails => _tripDetails.tr;
+  static String get pickupLocation => _pickupLocation.tr;
+  static String get dropLocation => _dropLocation.tr;
+  static String get selectPickupDate => _selectPickupDate.tr;
+  static String get roundTrip => _roundTrip.tr;
+  static String get selectReturnDate => _selectReturnDate.tr;
+  static String get selectPickupTime => _selectPickupTime.tr;
+  static String get otherDetails  => _otherDetails .tr;
+  static String get totalDistanceInkm  => _totalDistanceInkm .tr;
+  static String get totalPassanger  => _totalPassanger .tr;
+  static String get pickupTime  => _pickupTime .tr;
+  static String get bookYourTrip  => _bookYourTrip .tr;
   // Getters
 
   static String get login => _login.tr;
@@ -278,5 +334,93 @@ class StringConstants {
   static String get aboutUs => _aboutUs.tr;
   static String get themes => _themes.tr;
   static String get language => _language.tr;
+
+  static String get vehicleDetails => _vehicleDetails.tr;
+  static String get bookNow => _bookNow.tr;
+  static String get features => _features.tr;
+  static String get description => _description.tr;
+  static String get availableNow => _availableNow.tr;
+  static String get notAvailble => _notAvailble.tr;
+
+
+  static String get contactHeaddingDescription => _contactHeaddingDescription.tr;
+  static String get contactYourMassage => _contactYourMassage.tr;
+  static String get responsein24h => _responsein24h.tr;
+  static String get sendMassge => _sendMassge.tr;
+  static String get close => _close.tr;
+  static String get responseSubmitteddSuccefully => _responseSubmitteddSuccefully.tr;
+  static String get thankyouforContact => _thankyouforContact.tr;
+
+//new
+
+  static String get vehicle => _vehicle.tr;
+  static String get seatsKm => _seatsKm.tr;
+  static String get totalDistanceInKm => _totalDistanceInKm.tr;
+  static String get totalAmount => _totalAmount.tr;
+  static String get makePayment => _makePayment.tr;
+  static String get payAgain => _payAgain.tr;
+  static String get paymentSubmitted => _paymentSubmitted.tr;
+  static String get paymentVerified => _paymentVerified.tr;
+  static String get paymentRejected => _paymentRejected.tr;
+  static String get paymentPending => _paymentPending.tr;
+  static String get payment => _payment.tr;
+  static String get upiPayment => _upiPayment.tr;
+  static String get tapToPay => _tapToPay.tr;
+  static String get uploadPaymentProof => _uploadPaymentProof.tr;
+  static String get paymentProofSubmittedMessage =>
+      _paymentProofSubmittedMessage.tr;
+  static String get imageSelected => _imageSelected.tr;
+  static String get okGotIt => _okGotIt.tr;
+  static String get selectPaymentScreenshot =>
+      _selectPaymentScreenshot.tr;
+  static String get upiPaymentHint => _upiPaymentHint.tr;
+  static String get upiCopied => _upiCopied.tr;
+  static String get accountHolder => _accountHolder.tr;
+  static String get accountNo => _accountNo.tr;
+  static String get ifsc => _ifsc.tr;
+  static String get qrCode => _qrCode.tr;
+  static String get netBanking => _netBanking.tr;
+  static String get cash => _cash.tr;
+  // ---------------- Booking Details Screen ----------------
+
+
+  static const String _vehicle = 'Vehicle';
+  static const String _seatsKm = 'Seats • KM';
+  static const String _totalDistanceInKm = 'Total Distance (KM)';
+  static const String _totalAmount = 'Total Amount';
+  static const String _makePayment = 'Make Payment';
+  static const String _payAgain = 'Pay Again';
+  static const String _paymentSubmitted = 'Payment Submitted - Waiting for Verification';
+  static const String _paymentVerified = 'Payment Verified ✔';
+  static const String _paymentRejected = 'Payment Rejected, Tap Pay Again';
+  static const String _paymentPending = 'Payment Pending';
+  static const String _payment = 'Payment';
+  static const String _upiPayment = 'UPI Payment';
+  static const String _tapToPay = 'Tap to Pay';
+  static const String _uploadPaymentProof = 'Upload Payment Proof';
+  static const String _imageSelected = 'Image Selected ✔';
+  static const String _selectPaymentScreenshot = 'Please upload payment screenshot';
+  static const String _paymentProofSubmittedMessage =
+      'Your payment proof has been submitted successfully.\n\n'
+      'Our team is reviewing your payment and will confirm your booking shortly.\n\n'
+      'You will receive confirmation once your booking is marked as PAID';
+  static const String _okGotIt = 'OK, Got it';
+  static const String _upiPaymentHint = 'Tap UPI ID to pay using PhonePe, Paytm, Google Pay or any UPI app';
+  static const String _upiCopied = 'UPI ID copied';
+  static const String _accountHolder = 'Account Holder Name';
+  static const String _accountNo = 'Account No';
+  static const String _ifsc = 'IFSC Code';
+  static const String _qrCode = 'QR Code';
+  static const String _netBanking = 'Net Banking';
+  static const String _cash = 'Cash';
+
+
+
+
+
+
+
+
+
 
 }

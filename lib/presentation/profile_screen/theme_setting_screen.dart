@@ -21,7 +21,15 @@ class ThemeSettingScreen extends StatelessWidget {
       builder: (context, state) {
         return Container(
           decoration: BoxDecoration(
-            color: AppColors.lightWhiteDarkBackgroundColor,
+            //color: AppColors.lightWhiteDarkBackgroundColor,
+            gradient: LinearGradient(
+              colors: [
+                AppColors.VehicleCardBottomContainerColor1, // light orange
+                AppColors.VehicleCardBottomContainerColor2, // light blue
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(24.r),
               topRight: Radius.circular(24.r),
@@ -156,8 +164,9 @@ class ThemeSettingScreen extends StatelessWidget {
 
                     /// Apply Button
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 34),
+                      padding: EdgeInsets.only(bottom: 34),
                       child: CommonWidgets.commonElevatedButton(
+                        buttonColor: AppColors.MainBlueColor,
                         onPressed: () {
                           ThemeMode selectedMode;
                           switch (state.selectedTheme) {
